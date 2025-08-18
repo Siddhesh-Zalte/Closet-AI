@@ -337,7 +337,7 @@ def get_recommendations():
             age = int(age_group.split('-')[0]) if age_group else 25
 
         style = styles[0] if styles else 'casual'
-        api_key = "AIzaSyADz_RxDNz92h1MkoBP7O_dsv8f3ZFx7I4"
+        api_key = "YOUR API KEY HERE"
         search_query = generate_search_query(gender, age, skin_tone, style, season, api_key)
         log_to_file(f"Generated search query: {search_query}")
 
